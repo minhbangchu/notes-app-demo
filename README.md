@@ -1,6 +1,6 @@
 # AWS Serverless
 
-Step 1: Create a DynamoDB table
+## Step 1: Create a DynamoDB table
 
 1.1. Open the DynamoDB console at https://console.aws.amazon.com/dynamodb/.
 
@@ -12,7 +12,7 @@ Step 1: Create a DynamoDB table
 
 1.3. Choose Create.
 
-Step 2: Create a Lambda function
+## Step 2: Create a Lambda function
 
 2.1. Open the Lambda console at https://console.aws.amazon.com/lambda.
 
@@ -135,7 +135,7 @@ exports.handler = async(event, context) => {
 2.6. Choose Deploy to update your function.
 
 
-Step 3: Create an HTTP API
+## Step 3: Create an HTTP API
 
 3.1. Open the API Gateway console at https://console.aws.amazon.com/apigateway.
 
@@ -152,7 +152,7 @@ Step 3: Create an HTTP API
 3.5. Review the stage that API Gateway creates for you, and then choose Create.
 
 
-Step 4: Create routes in API Gateway
+## Step 4: Create routes in API Gateway
 
 Routes are a way to send incoming API requests to backend resources. For this example API, we create four routes:
 
@@ -183,7 +183,7 @@ To create routes:
 Repeat 4.1 to 4.5 for GET /notes, DELETE /notes/{id}, and PUT /notes.
 
 
-Step 5: Create an integration
+## Step 5: Create an integration
 
 You create an integration to connect a route to backend resources. For this example API, you create one Lambda integration that you use for all routes.
 
@@ -206,7 +206,7 @@ For other API, Implement 5.1 to 5.3:
 - In `Integration details for route` > Chose `notesAppDemo` > Chose Attach Integration
 
 
-Step 6: Test your API with Postman
+## Step 6: Test your API with Postman
 
 6.1. Open the API Gateway console at https://console.aws.amazon.com/apigateway.
 
